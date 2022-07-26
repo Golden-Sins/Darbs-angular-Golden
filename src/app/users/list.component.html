@@ -1,23 +1,47 @@
 ﻿
 <a routerLink="add" class="btn btn-sm btn-success mb-2">Sūtīt uz CCB</a>
-<div class="inf" style="position: absolute; left:10px; width:300px;">
-<table class="table table-striped">
+<div style="position: absolute; left:10px; width:400px;">
+<table>
 
     <tbody>
         <tr *ngFor="let user of users">
            <!-- <td>{{user.firstName}}</td>
             <td>{{user.lastName}}</td>
             <td>{{user.username}}</td> -->
-            <div style="border-width:1px;border-style:solid; border-radius: 2px;border-color:rgb(211, 211, 211);">
+            <div style=" border-width:1px;border-style:solid; height: 100px; border-radius: 2px;border-color:rgb(211, 211, 211);background-color: rgb(247, 247, 247);">
                 <!--<a routerLink="edit/{{user.id}}" class="btn btn-sm btn-primary mr-1">Edit</a>
                 <button (click)="deleteUser(user.id)" class="btn btn-sm btn-danger btn-delete-user" [disabled]="user.isDeleting">
                     <span *ngIf="user.isDeleting" class="spinner-border spinner-border-sm"></span>-->
-                    <button class="btn btn-sm btn-primary mr-1" style="right: 1px;">
+                    <p style="position: relative; top: 11px;left: 14px;">28</p ><p style="position: absolute;top: 12px; left: 50px;">LĒMUMS</p>
+                    <p style="position: relative; top: -10px; left: 10px;">mai</p><p style="position: absolute; top: 31px;left: 50px;">BERTA0L0000005</p>
+                    <button style="width: 100px; position: absolute; top:19px; left: 270px;" class="btn btn-sm btn-primary mr-1">
                     <span *ngIf="!user.isDeleting">Digitalizēts</span>
                     </button>
-                    <div style="border-width:1px;border-style:solid; border-radius: 2px;border-color:rgb(211, 211, 211);">
-                    Iesūtija <!--Illmars Birzleja-->
+                    <br>
+                    <div style="position: relative;top:-40px; border:0px; border-top: 1px; border-style:solid; width: 400px; border-color:rgb(211, 211, 211);">
+                    <p style="position: relative; top: 8px; left: 10px; font-size: 11px;"><a style="color:rgb(165, 165, 165);">Iesūtija : </a><a style="position: relative;">Illmars Birzleja</a></p>
                     </div>
+            </div>
+            <div style="position: relative; top: 20px; border-width:1px;border-style:solid; height: 185px; border-radius: 2px;border-color:rgb(211, 211, 211);background-color: rgb(247, 247, 247);">
+              <input type="checkbox"> <p style="position: relative; left: 20px; top: -25px;;">Nodot piespiedu izpildīšanai</p>
+              <div style="position: relative;top:-35px; border:0px; border-top: 1px; border-style:solid; width: 400px; border-color:rgb(211, 211, 211);">
+              <input type="checkbox"> <p style="position: relative; left: 20px; top: -25px;;">Paziņojums pieteicējeam</p>
+              </div>
+              <div style="position: relative;top:-75px; border:0px; border-top: 1px; border-style:solid; width: 400px; border-color:rgb(211, 211, 211);">
+              <input type="checkbox"> <p style="position: relative; left: 20px; top: -25px;;">Paziņojums tiesai</p>
+              </div>
+              <div style="position: relative;top:-115px; border:0px; border-top: 1px; border-style:solid; width: 400px; border-color:rgb(211, 211, 211);">
+              <input type="checkbox"> <p style="position: relative; left: 20px; top: -25px;;">Atteikt pieņemt</p>
+              </div>
+              <div style="position: relative;top:-155px; border:0px; border-top: 1px; border-style:solid; width: 400px; border-color:rgb(211, 211, 211);">
+              <input type="checkbox"> <p style="position: relative; left: 20px; top: -25px;;">Apturēt izpildu lietvedību</p>
+              </div>
+              <div style="position: relative;top:-195px; border:0px; border-top: 1px; border-style:solid; width: 400px; border-color:rgb(211, 211, 211);">
+              <input type="checkbox"> <p style="position: relative; left: 20px; top: -25px;;">Izbeigt tiesvedību</p>
+              </div>
+              <div style="position: relative;top:-235px; border:0px; border-top: 1px; border-style:solid; width: 400px; border-color:rgb(211, 211, 211);">
+              <input type="checkbox"> <p style="position: relative; left: 20px; top: -25px;;">Attstāt bez izskatīšanas</p>
+              </div>
             </div>
         </tr>
         <tr *ngIf="!users">
