@@ -1,49 +1,85 @@
-﻿
+﻿<div class="scroll">
 <a routerLink="add" class="btn btn-sm btn-success mb-2">Sūtīt uz CCB</a>
-<div style="position: absolute; left:10px; width:400px;">
+<div style="position: relative; width:400px; height: 650px;">
 <table>
-
     <tbody>
         <tr *ngFor="let user of users">
-           <!-- <td>{{user.firstName}}</td>
-            <td>{{user.lastName}}</td>
-            <td>{{user.username}}</td> -->
-            <div style=" border-width:1px;border-style:solid; height: 100px; border-radius: 2px;border-color:rgb(211, 211, 211);background-color: rgb(247, 247, 247);">
-                <!--<a routerLink="edit/{{user.id}}" class="btn btn-sm btn-primary mr-1">Edit</a>
-                <button (click)="deleteUser(user.id)" class="btn btn-sm btn-danger btn-delete-user" [disabled]="user.isDeleting">
-                    <span *ngIf="user.isDeleting" class="spinner-border spinner-border-sm"></span>-->
-                    <p style="position: relative; top: 11px;left: 14px;">28</p ><p style="position: absolute;top: 12px; left: 50px;">LĒMUMS</p>
-                    <p style="position: relative; top: -10px; left: 10px;">mai</p><p style="position: absolute; top: 31px;left: 50px;">BERTA0L0000005</p>
-                    <button style="width: 100px; position: absolute; top:19px; left: 270px;" class="btn btn-sm btn-primary mr-1">
-                    <span *ngIf="!user.isDeleting">Digitalizēts</span>
+            <div class="xcon" >
+
+                    <p class="a">28</p><p class="b">LĒMUMS</p>
+                    <p class="c">mai</p><p class="d">BERTA0L0000005</p>
+                    <a class="but">
+                    <button class="but" class="btn btn-sm btn-primary mr-1">
+                      <span *ngIf="!user.isDeleting">Digitalizēts</span>
                     </button>
+                    </a>
                     <br>
-                    <div style="position: relative;top:-40px; border:0px; border-top: 1px; border-style:solid; width: 400px; border-color:rgb(211, 211, 211);">
-                    <p style="position: relative; top: 8px; left: 10px; font-size: 11px;"><a style="color:rgb(165, 165, 165);">Iesūtija : </a><a style="position: relative;">Illmars Birzleja</a></p>
+
+                    <div class="bcon">
+                    <p class="ap"><a class="aa">Iesūtija : </a><a style="position: relative;">Illmars Birzleja</a></p>
                     </div>
+
             </div>
-            <div style="position: relative; top: 20px; border-width:1px;border-style:solid; height: 185px; border-radius: 2px;border-color:rgb(211, 211, 211);background-color: rgb(247, 247, 247);">
-              <input type="checkbox"> <p style="position: relative; left: 20px; top: -25px;;">Nodot piespiedu izpildīšanai</p>
-              <div style="position: relative;top:-35px; border:0px; border-top: 1px; border-style:solid; width: 400px; border-color:rgb(211, 211, 211);">
-              <input type="checkbox"> <p style="position: relative; left: 20px; top: -25px;;">Paziņojums pieteicējeam</p>
+
+            <div class="bicon">
+              <input type="checkbox"> <p class="vau" >Nodot piespiedu izpildīšanai</p>
+              <div class="qcon" style="top:-35px;">
+              <input type="checkbox"> <p class="vau" >Paziņojums pieteicējeam</p>
               </div>
-              <div style="position: relative;top:-75px; border:0px; border-top: 1px; border-style:solid; width: 400px; border-color:rgb(211, 211, 211);">
-              <input type="checkbox"> <p style="position: relative; left: 20px; top: -25px;;">Paziņojums tiesai</p>
+              <div class="qcon" style="top:-75px;">
+              <input type="checkbox"> <p class="vau" >Paziņojums tiesai</p>
               </div>
-              <div style="position: relative;top:-115px; border:0px; border-top: 1px; border-style:solid; width: 400px; border-color:rgb(211, 211, 211);">
-              <input type="checkbox"> <p style="position: relative; left: 20px; top: -25px;;">Atteikt pieņemt</p>
+              <div class="qcon" style="top:-115px;">
+              <input type="checkbox"> <p class="vau" >Atteikt pieņemt</p>
               </div>
-              <div style="position: relative;top:-155px; border:0px; border-top: 1px; border-style:solid; width: 400px; border-color:rgb(211, 211, 211);">
-              <input type="checkbox"> <p style="position: relative; left: 20px; top: -25px;;">Apturēt izpildu lietvedību</p>
+              <div class="qcon" style="top:-155px;">
+              <input type="checkbox"> <p class="vau" >Apturēt izpildu lietvedību</p>
               </div>
-              <div style="position: relative;top:-195px; border:0px; border-top: 1px; border-style:solid; width: 400px; border-color:rgb(211, 211, 211);">
-              <input type="checkbox"> <p style="position: relative; left: 20px; top: -25px;;">Izbeigt tiesvedību</p>
+              <div class="qcon" style="top:-195px;">
+              <input type="checkbox"> <p class="vau" >Izbeigt tiesvedību</p>
               </div>
-              <div style="position: relative;top:-235px; border:0px; border-top: 1px; border-style:solid; width: 400px; border-color:rgb(211, 211, 211);">
-              <input type="checkbox"> <p style="position: relative; left: 20px; top: -25px;;">Attstāt bez izskatīšanas</p>
+              <div class="qcon" style="top:-235px;">
+              <input type="checkbox"> <p class="vau" >Attstāt bez izskatīšanas</p>
               </div>
             </div>
-        </tr>
+
+          <div style="font-size: 13px;">
+
+            <div class="con1" style="height: 125px;">
+              <p class="boldp">Parādnieks</p>
+              <p class="per" >personas kods<a class="par"><input class="info" type="search"></a></p>
+              <p class="per" >Vārds, Uzvārds<a class="par"><input class="info" type="search"></a></p>
+            </div>
+
+            <div class="con1" style="height: 160px;">
+              <p class="boldp">Lēmums</p>
+              <p class="per" >Lietas Nr.<a class="par"><input class="info" type="search"></a></p>
+              <p class="per" >Vieta<a class="par"><input class="info" type="search"></a></p>
+              <p class="per" >Datums<a class="par"><input class="info" type="search"></a></p>
+            </div>
+
+            <div class="con1" style="height: 200px;">
+              <p class="boldp">Konstatēja</p>
+              <p class="per" >Līguma Nr.<a class="par"><input class="info" type="search"></a></p>
+              <p class="per" >Līguma datums<a class="par"><input class="info" type="search"></a></p>
+              <p class="per" >Parāda summa<a class="par"><input class="info" type="search"></a></p>
+              <p class="per" >Rēķina valūta<a class="par"><input class="info" type="search"></a></p>
+            </div>
+
+            <div class="con1" style="height: 130px;">
+              <p class="boldp">Nolēma</p>
+              <p class="per" >Tiesa<a class="par"><input class="info" type="search"></a></p>
+              <p class="per" >Lēmums<a class="par"><input class="info" type="search"></a></p>
+            </div>
+            <div class="con1" style="height: 100px;">
+              <p class="boldp" style="position: relative;top:5px; font-weight: bold; left:10px;">Paradzētā CCB piezīme</p>
+              <p class="per" >Saņemts Zemgales rajona tiesas 20.09.2021 Nr. 3-10/0000/1234</p>
+              <p class="per" style="top:-15px;">Lēmums - atteikt pieņemt ACC 40001111111</p>
+            </div>
+            <div style="height:100px;"></div>
+
+          </div>
+          </tr>
         <tr *ngIf="!users">
             <td colspan="4" class="text-center">
                 <span class="spinner-border spinner-border-lg align-center"></span>
@@ -52,3 +88,11 @@
     </tbody>
 </table>
 </div>
+</div>
+                <!--<a routerLink="edit/{{user.id}}" class="btn btn-sm btn-primary mr-1">Edit</a>
+                <button (click)="deleteUser(user.id)" class="btn btn-sm btn-danger btn-delete-user" [disabled]="user.isDeleting">
+                    <span *ngIf="user.isDeleting" class="spinner-border spinner-border-sm"></span>-->
+                               <!-- <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.username}}</td> -->
+

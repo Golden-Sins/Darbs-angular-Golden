@@ -1,9 +1,13 @@
-﻿import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit ,ChangeDetectionStrategy} from '@angular/core';
 import { first } from 'rxjs/operators';
-
 import { AccountService } from '@app/_services';
 
-@Component({ templateUrl: 'list.component.html' })
+@Component({
+  selector: 'listComponent',
+  templateUrl: 'list.component.html',
+  styleUrls: ['list.less']
+})
+
 export class ListComponent implements OnInit {
     users = null;
 
